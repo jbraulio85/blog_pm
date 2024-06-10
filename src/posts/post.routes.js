@@ -16,7 +16,7 @@ router.post(
   [
     check("name", "El nombre es obligatorio").not().isEmpty(),
     check("title", "El título es obligatorio").not().isEmpty(),
-    check("thumbnail", "Esta no es una url válida").isURL(),
+    check("thumbnail", "Está mal esto").isURL(),
     validarCampos,
   ],
   createPost
